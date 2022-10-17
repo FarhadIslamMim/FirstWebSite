@@ -26,7 +26,7 @@ Route::get('/', function () {
 Route::controller(AdminController::class)->group(function(){
 
     Route::get('/admin/logout','logout')->name('admin.logout');
-
+    Route::get('/admin/profile','Profile')->name('admin.profile');
 });
 
 
