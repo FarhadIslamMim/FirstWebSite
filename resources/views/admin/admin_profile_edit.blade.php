@@ -56,7 +56,7 @@
                                     <div class="col-sm-10">
                                         <img id="showImage" class="rounded avatar-lg"
                                         src="{{ (!empty($editData->profile_image))?
-                                         url('upload/admin_images/'.$editData->profile_image):url('upload/no_image.jpg') }}"
+                                         url('upload/admin_images/'.$editData->profile_image):url('upload/nullimage.jpg') }}"
                                           alt="Card image cap">
 
                                     </div>

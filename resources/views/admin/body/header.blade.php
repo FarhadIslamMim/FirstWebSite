@@ -62,7 +62,7 @@
 
                     <img class="rounded-circle header-profile-user"
                      src="{{ (!empty($adminData->profile_image))?
-                     url('upload/admin_images/'.$adminData->profile_image):url('upload/no_image.jpg') }}"
+                     url('upload/admin_images/'.$adminData->profile_image):url('upload/nullimage.jpg') }}"
                       alt="Header Avatar">
 
                     <span class="d-none d-xl-inline-block ms-1"> {{$adminData->username }} </span>
