@@ -9,14 +9,15 @@
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesdesign" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.ico') }}">
 
     <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('backend/assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet"
+        type="text/css" />
     <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('backend/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- App Css-->
-    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('backend/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -45,19 +46,19 @@
                             @csrf
 
                             <!-- Username -->
-                            <div class="form-goup mb-3 row" >
+                            <div class="form-goup mb-3 row">
                                 <div class="col-12">
-                                   <input class="form-control" id="username" type="text" name="username"
-                                   required="" placeholder="Username">
+                                    <input class="form-control" id="username" type="text" name="username"
+                                        required="" placeholder="Username">
                                 </div>
-                              </div>
+                            </div>
 
-                           <!-- Password -->
-                             <div class="form-goup mb-3 row" >
-                              <div class="col-12">
-                                 <input class="form-control" id="password" type="password" name="password"
-                                 required="" placeholder="Password">
-                              </div>
+                            <!-- Password -->
+                            <div class="form-goup mb-3 row">
+                                <div class="col-12">
+                                    <input class="form-control" id="password" type="password" name="password"
+                                        required="" placeholder="Password">
+                                </div>
                             </div>
 
                             <div class="form-group mb-3 row">
@@ -78,7 +79,8 @@
 
                             <div class="form-group mb-0 row mt-2">
                                 <div class="col-sm-7 mt-3">
-                                    <a href="{{ route('password.request') }}" class="text-muted"><i class="mdi mdi-lock"></i> Forgot
+                                    <a href="{{ route('password.request') }}" class="text-muted"><i
+                                            class="mdi mdi-lock"></i> Forgot
                                         your password?</a>
                                 </div>
                                 <div class="col-sm-5 mt-3">
@@ -98,14 +100,15 @@
     </div>
     <!-- end -->
 
-    <!-- JAVASCRIPT -->
-    <script src="assets/libs/jquery/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-    <script src="assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="assets/libs/node-waves/waves.min.js"></script>
+      <!-- JAVASCRIPT -->
+      <script src="{{asset('backend/assets/libs/jquery/jquery.min.js')}}"></script>
+      <script src="{{asset('backend/assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+      <script src="{{asset('backend/assets/libs/metismenu/metisMenu.min.js')}}"></script>
+      <script src="{{asset('backend/assets/libs/simplebar/simplebar.min.js')}}"></script>
+      <script src="{{asset('backend/assets/libs/node-waves/waves.min.js')}}"></script>
 
-    <script src="assets/js/app.js"></script>
+      <script src="{{asset('backend/assets/js/app.js')}}"></script>
+
 
 </body>
 
