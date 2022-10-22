@@ -34,6 +34,18 @@ class AboutController extends Controller
                 'long_description' => $request->long_description,
                 'about_image' => $save_url,
 
+                'institute_name1' => $request->institute_name1,
+                'year1' => $request->year1,
+                'cgpa_description1' =>  $request->cgpa_description1,
+
+                'institute_name2' => $request->institute_name2,
+                'year2' => $request->year2,
+                'cgpa_description2' => $request->cgpa_description2,
+
+                'institute_name3' => $request->institute_name3,
+                'year3' => $request->year3,
+                'cgpa_description3' =>  $request->cgpa_description3,
+
             ]);
             $notification = array(
             'message' => 'About Page Updated with Image Successfully',
@@ -49,6 +61,18 @@ class AboutController extends Controller
                 'short_title' => $request->short_title,
                 'short_description' => $request->short_description,
                 'long_description' => $request->long_description,
+
+                'institute_name1' => $request->institute_name1,
+                'year1' => $request->year1,
+                'cgpa_description1' =>  $request->cgpa_description1,
+
+                'institute_name2' => $request->institute_name2,
+                'year2' => $request->year2,
+                'cgpa_description2' => $request->cgpa_description2,
+
+                'institute_name3' => $request->institute_name3,
+                'year3' => $request->year3,
+                'cgpa_description3' =>  $request->cgpa_description3,
 
             ]);
             $notification = array(
@@ -67,5 +91,5 @@ class AboutController extends Controller
         $aboutpage = About::find(1);
         return view('frontend.about_page',compact('aboutpage'));
 
-     }// End Method 
+     }// End Method
 }

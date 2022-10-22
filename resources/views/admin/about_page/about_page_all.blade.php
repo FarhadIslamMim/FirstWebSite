@@ -78,6 +78,106 @@
                                     </div>
                                 </div>
                                 <!-- end row -->
+
+
+
+
+                                <!--Education 1-->
+                                <div class="row mb-3">
+                                    <label for="example-text-input" class="col-sm-2 col-form-label">Institute Name</label>
+                                    <div class="col-sm-10">
+                                        <input name="institute_name1" class="form-control" type="text"
+                                            value="{{ $aboutpage->institute_name1 }}" id="example-text-input">
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+                                <div class="row mb-3">
+                                    <label for="example-text-input" class="col-sm-2 col-form-label">Year</label>
+                                    <div class="col-sm-10">
+                                        <input name="year1" class="form-control" type="text"
+                                            value="" id="example-text-input">
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+
+                                <div class="row mb-3">
+                                    <label for="example-text-input" class="col-sm-2 col-form-label">CGPA & Description
+                                    </label>
+                                    <div class="col-sm-10">
+                                        <textarea required="" name="cgpa_description1" class="form-control" rows="5">
+                                          {{ $aboutpage->cgpa_description1 }}
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+                                <!--Education 2-->
+                                <div class="row mb-3">
+                                    <label for="example-text-input" class="col-sm-2 col-form-label">Institute Name</label>
+                                    <div class="col-sm-10">
+                                        <input name="institute_name2" class="form-control" type="text"
+                                            value="" id="example-text-input">
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+                                <div class="row mb-3">
+                                    <label for="example-text-input" class="col-sm-2 col-form-label">Year</label>
+                                    <div class="col-sm-10">
+                                        <input name="year2" class="form-control" type="text"
+                                            value="" id="example-text-input">
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+
+                                <div class="row mb-3">
+                                    <label for="example-text-input" class="col-sm-2 col-form-label">CGPA & Description
+                                    </label>
+                                    <div class="col-sm-10">
+                                        <textarea required="" name="cgpa_description2" class="form-control" rows="5">
+                                          {{ $aboutpage->cgpa_description2 }}
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+                                <!--Education 2-->
+                                <div class="row mb-3">
+                                    <label for="example-text-input" class="col-sm-2 col-form-label">Institute Name</label>
+                                    <div class="col-sm-10">
+                                        <input name="institute_name3" class="form-control" type="text"
+                                            value="" id="example-text-input">
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+                                <div class="row mb-3">
+                                    <label for="example-text-input" class="col-sm-2 col-form-label">Year</label>
+                                    <div class="col-sm-10">
+                                        <input name="year3" class="form-control" type="text"
+                                            value="" id="example-text-input">
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+
+                                <div class="row mb-3">
+                                    <label for="example-text-input" class="col-sm-2 col-form-label">CGPA & Description
+                                    </label>
+                                    <div class="col-sm-10">
+                                        <textarea required="" name="cgpa_description3" class="form-control" rows="5">
+                                          {{ $aboutpage->cgpa_description3 }}
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+
+
+
                                 <input type="submit" class="btn btn-info waves-effect waves-light"
                                     value="Update About Page">
                             </form>
