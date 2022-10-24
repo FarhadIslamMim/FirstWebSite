@@ -16,6 +16,13 @@ class AboutController extends Controller
 
      } // End Method
 
+     public function AboutShow(){
+
+        $aboutShow = About::find(1);
+        return view('admin.about_page.about_page_data_show',compact('aboutShow'));
+
+     } // End Method
+
      public function UpdateAbout(Request $request){
 
         $about_id = $request->id;

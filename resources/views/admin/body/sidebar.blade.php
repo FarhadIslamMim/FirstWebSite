@@ -52,7 +52,8 @@
                         <span>About Page Setup</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{ route('about.page') }}">About Page</a></li>
+                        <li><a href="{{ route('about.page') }}"> <i class="ri-information-line"></i> About Page</a></li>
+                        <li><a href="{{ route('about.show') }}"><i class=" ri-eye-line"></i>Show About</a></li>
 
                     </ul>
                 </li>
