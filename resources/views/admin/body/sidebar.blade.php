@@ -53,6 +53,8 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{ route('about.page') }}"> <i class="ri-information-line"></i> About Page</a></li>
+                        <li><a href="{{ route('about.multi.image') }}"><i class="ri-image-line"></i>About Multi Image</a></li>
+                        <li><a href="{{ route('all.multi.image') }}"> <i class=" ri-list-check-2"></i>All Multi Image</a></li>
                         <li><a href="{{ route('about.show') }}"><i class=" ri-eye-line"></i>Show About</a></li>
 
                     </ul>
