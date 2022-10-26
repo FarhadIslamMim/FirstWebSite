@@ -96,7 +96,7 @@
                                     <label for="example-text-input" class="col-sm-2 col-form-label">Year</label>
                                     <div class="col-sm-10">
                                         <input name="year1" class="form-control" type="text"
-                                            value="" id="example-text-input">
+                                            value="{{ $aboutpage->year1 }}" id="example-text-input">
                                     </div>
                                 </div>
                                 <!-- end row -->
@@ -118,7 +118,7 @@
                                     <label for="example-text-input" class="col-sm-2 col-form-label">Institute Name</label>
                                     <div class="col-sm-10">
                                         <input name="institute_name2" class="form-control" type="text"
-                                            value="" id="example-text-input">
+                                            value="{{ $aboutpage->institute_name2}}" id="example-text-input">
                                     </div>
                                 </div>
                                 <!-- end row -->
@@ -127,7 +127,7 @@
                                     <label for="example-text-input" class="col-sm-2 col-form-label">Year</label>
                                     <div class="col-sm-10">
                                         <input name="year2" class="form-control" type="text"
-                                            value="" id="example-text-input">
+                                            value="{{ $aboutpage->year2}}" id="example-text-input">
                                     </div>
                                 </div>
                                 <!-- end row -->
@@ -149,7 +149,7 @@
                                     <label for="example-text-input" class="col-sm-2 col-form-label">Institute Name</label>
                                     <div class="col-sm-10">
                                         <input name="institute_name3" class="form-control" type="text"
-                                            value="" id="example-text-input">
+                                            value="{{ $aboutpage->institute_name3 }}" id="example-text-input">
                                     </div>
                                 </div>
                                 <!-- end row -->
@@ -158,7 +158,7 @@
                                     <label for="example-text-input" class="col-sm-2 col-form-label">Year</label>
                                     <div class="col-sm-10">
                                         <input name="year3" class="form-control" type="text"
-                                            value="" id="example-text-input">
+                                            value="{{ $aboutpage->year3}}" id="example-text-input">
                                     </div>
                                 </div>
                                 <!-- end row -->
