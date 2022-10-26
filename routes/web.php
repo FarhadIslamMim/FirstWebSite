@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Home\HomeSliderController;
 use App\Http\Controllers\Home\AboutController;
+use App\Http\Controllers\Home\PortfolioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,6 +60,13 @@ Route::controller(AboutController::class)->group(function(){
     Route::get('/delete/multi/image/{id}', 'DeleteMultiImage')->name('delete.multi.image');
 
     Route::get('/about/show', 'AboutShow')->name('about.show');
+});
+
+//Admin Portfolio all route
+Route::controller(PortfolioController::class)->group(function(){
+
+    Route::get('/all/portfolio', 'AllPortfolio')->name('all.portfolio');
+
 });
 
 
