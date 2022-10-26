@@ -33,7 +33,7 @@
 
                                 <tbody>
                                     @php($i = 1)
-                                    @foreach ($portfolio as $item)
+                                    @foreach ($protfolio as $item)
                                         <tr>
                                             <td> {{ $i++ }} </td>
                                             <td> {{ $item->portfolio_name }} </td>

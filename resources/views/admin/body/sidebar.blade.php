@@ -66,8 +66,8 @@
                         <span>Portfolio Setup</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{ route('all.portfolio') }}"> <i class="ri-information-line"></i>All Portfolio</a></li>
-                        <li><a href=""><i class="ri-image-line"></i>Add Portfolio</a></li>
+                        <li><a href="{{ route('all.portfolio') }}"> <i class="ri-file-list-line"></i>All Portfolio</a></li>
+                        <li><a href="{{ route('add.portfolio') }}"><i class="ri-add-line"></i>Add Portfolio</a></li>
                     </ul>
                 </li>
 
