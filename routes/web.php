@@ -72,6 +72,9 @@ Route::controller(PortfolioController::class)->group(function(){
     Route::post('/update/portfolio', 'UpdatePortfolio')->name('update.protfolio');
     Route::get('/delete/portfolio/{id}', 'DeletePortfolio')->name('delete.portfolio');
 
+    //this route if for Froentend
+    Route::get('/portfolio/details/{id}', 'PortfolioDetails')->name('portfolio.details');
+
 });
 
 
