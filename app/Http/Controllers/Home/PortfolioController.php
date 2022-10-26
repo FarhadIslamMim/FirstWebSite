@@ -109,6 +109,12 @@ class PortfolioController extends Controller
 
     } // End Method
 
+    public function ShowPortfolio($id){
+
+        $portfolio = Portfolio::findOrFail($id);
+        return view('admin.protfolio.protfolio_show',compact('portfolio'));
+     }// End Method
+
     public function DeletePortfolio($id){
 
         $portfolio = Portfolio::findOrFail($id);
