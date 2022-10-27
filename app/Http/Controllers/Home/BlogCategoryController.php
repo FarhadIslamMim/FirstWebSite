@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\BlogCategory;
+use Illuminate\Support\Carbon;
 
 class BlogCategoryController extends Controller
 {
@@ -37,6 +38,8 @@ class BlogCategoryController extends Controller
 
         BlogCategory::insert([
             'blog_category' => $request->blog_category,
+            'created_at' => Carbon::now(),
+
 
         ]);
 
@@ -54,7 +57,7 @@ class BlogCategoryController extends Controller
         return view('admin.blog_category.blog_category_edit',compact('blogcategory'));
 
     } // End Method
-    
+
     public function UpdateBlogCategory(Request $request,$id){
 
          BlogCategory::findOrFail($id)->update([
