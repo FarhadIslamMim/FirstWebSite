@@ -5,7 +5,7 @@
     <style type="text/css">
         .bootstrap-tagsinput .tag {
             margin-right: 2px;
-            color: #b70000;
+            color: #5f82da;
             font-weight: 700px;
         }
     </style>
@@ -20,7 +20,7 @@
 
                             <h4 class="card-title">Blog Page </h4>
 
-                            <form method="post" action="{{ route('store.protfolio') }}" enctype="multipart/form-data">
+                            <form method="post" action="{{ route('store.blog') }}" enctype="multipart/form-data">
                                 @csrf
 
 
@@ -32,9 +32,11 @@
                                         <select name="blog_category_id" class="form-select"
                                             aria-label="Default select example">
                                             <option selected="">Open this select menu</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
+
+                                            @foreach($categories as $cat)
+                                            <option value="{{ $cat->id }}">{{ $cat->blog_category }}</option>
+                                            @endforeach
+
                                         </select>
                                     </div>
                                 </div>
