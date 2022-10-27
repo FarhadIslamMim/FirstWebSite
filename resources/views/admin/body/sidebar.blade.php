@@ -84,7 +84,7 @@
                         </li>
 
                         <li>
-                            <a href="javascript: void(0);" class="">Add Blog Category</a>
+                            <a href="{{ route('add.blog.category') }}" class="">Add Blog Category</a>
 
                         </li>
                     </ul>
