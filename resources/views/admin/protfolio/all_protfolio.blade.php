@@ -43,9 +43,9 @@
 
                                             <td>
                                                 <a href="{{ route('show.portfolio', $item->id) }}"
-                                                    class="btn btn-success waves-effect waves-light" title="Show Data" id="show"> <i
-                                                        class="ri-eye-line"></i> </a>
-                                                        
+                                                    class="btn btn-success sm" title="Show Data" id="show">
+                                                    <i class="fas fa-eye"></i> </a>
+
                                                 <a href="{{ route('edit.portfolio', $item->id) }}" class="btn btn-info sm"
                                                     title="Edit Data"> <i class="fas fa-edit"></i> </a>
 
