@@ -102,6 +102,9 @@ Route::controller(BlogCategoryController::class)->group(function () {
     Route::post('/update/blog', 'UpdateBlog')->name('update.blog');
     Route::get('/delete/blog/{id}', 'DeleteBlog')->name('delete.blog');
 
+    //Forntend Route
+    Route::get('/blog/details/{id}', 'BlogDetails')->name('blog.details');
+
 
 });
 
