@@ -104,6 +104,7 @@ Route::controller(BlogCategoryController::class)->group(function () {
 
     //Forntend Route
     Route::get('/blog/details/{id}', 'BlogDetails')->name('blog.details');
+    Route::get('/category/blog/{id}', 'CategoryBlog')->name('category.blog');
 
 
 });
