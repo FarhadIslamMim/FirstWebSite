@@ -127,7 +127,8 @@ Route::controller(ContactController::class)->group(function () {
 
     //bckend route
     Route::get('/contact/message', 'ContactMessage')->name('contact.message');
-    Route::get('/delete/message/{id}', 'DeleteMessage')->name('delete.message');  
+    Route::get('/delete/message/{id}', 'DeleteMessage')->name('delete.message');
+    Route::get('/show/message/{id}', 'ShowMessage')->name('show.message');
 
 });
 

@@ -55,5 +55,13 @@ class ContactController extends Controller
 
         return redirect()->back()->with($notification);
 
-    } // end mehtod 
+    } // end mehtod
+
+    public function ShowMessage($id){
+
+        $contact=Contact::findOrFail($id);
+
+        return view('admin.contact.show_contact',compact('contact'));
+
+       } // end mehtod
 }
