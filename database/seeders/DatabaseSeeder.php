@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 use App\Models\Contact;
 
@@ -16,7 +17,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        \App\Models\Contact::factory(100)->create();
+
+         \App\Models\BlogCategory::factory(10)->create();
+
+
+       // \App\Models\Contact::factory(100)->create();
 
         $this->call(UserSeeder::class);
         $this->call(FooterSeeder::class);
@@ -27,5 +32,5 @@ class DatabaseSeeder extends Seeder
         $this->call(ContactSeeder::class);
        }
 
-    
+
 }
