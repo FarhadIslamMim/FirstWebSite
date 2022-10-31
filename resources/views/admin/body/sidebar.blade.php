@@ -1,6 +1,4 @@
-
-
- <div class="vertical-menu">
+<div class="vertical-menu">
 
     <div data-simplebar class="h-100">
 
@@ -53,8 +51,10 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{ route('about.page') }}"> <i class="ri-information-line"></i> About Page</a></li>
-                        <li><a href="{{ route('about.multi.image') }}"><i class="ri-image-line"></i>About Multi Image</a></li>
-                        <li><a href="{{ route('all.multi.image') }}"> <i class=" ri-list-check-2"></i>All Multi Image</a></li>
+                        <li><a href="{{ route('about.multi.image') }}"><i class="ri-image-line"></i>About Multi
+                                Image</a></li>
+                        <li><a href="{{ route('all.multi.image') }}"> <i class=" ri-list-check-2"></i>All Multi
+                                Image</a></li>
                         <li><a href="{{ route('about.show') }}"><i class=" ri-eye-line"></i>Show About</a></li>
 
                     </ul>
@@ -66,7 +66,8 @@
                         <span>Portfolio Setup</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{ route('all.portfolio') }}"> <i class="ri-file-list-line"></i>All Portfolio</a></li>
+                        <li><a href="{{ route('all.portfolio') }}"> <i class="ri-file-list-line"></i>All Portfolio</a>
+                        </li>
                         <li><a href="{{ route('add.portfolio') }}"><i class="ri-add-line"></i>Add Portfolio</a></li>
                     </ul>
                 </li>
@@ -101,7 +102,7 @@
 
                     </ul>
                 </li>
-                
+
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="ri-profile-line"></i>
@@ -109,6 +110,18 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{ route('footer.setup') }}">Footer Setup</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ri-profile-line"></i>
+                        <span>Contact Message </span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{ route('contact.message') }}">Contact Message</a></li>
 
 
                     </ul>
