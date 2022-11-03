@@ -79,6 +79,7 @@ Route::controller(PortfolioController::class)->group(function(){
 
     //this route if for Froentend
     Route::get('/portfolio/details/{id}', 'PortfolioDetails')->name('portfolio.details');
+    Route::get('/portfolio', 'HomePortfolio')->name('home.portfolio');
 
 });
 // Blog Category All Routes
