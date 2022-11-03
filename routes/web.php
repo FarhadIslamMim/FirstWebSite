@@ -21,9 +21,9 @@ use App\Http\Controllers\Home\ContactController;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+// Route::get('/', function () {
+//     return view('frontend.index');
+// });
 
 
 
@@ -42,6 +42,9 @@ Route::controller(AdminController::class)->group(function(){
 
 //Admin Home slide all route
 Route::controller(HomeSliderController::class)->group(function(){
+
+    //froentend main home route
+    Route::get('/', 'HomeMain')->name('home');
 
     Route::get('/home/slide', 'HomeSlider')->name('home.slide');
     Route::post('/update/slider', 'UpdateSlider')->name('update.slider');
