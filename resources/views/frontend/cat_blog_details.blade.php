@@ -1,4 +1,9 @@
 @extends('frontend.main_master')
+
+@section('title')
+   Blog Details | Easy Code
+@endsection
+
 @section('main')
     <main>
 

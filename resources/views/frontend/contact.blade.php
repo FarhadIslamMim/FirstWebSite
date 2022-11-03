@@ -1,5 +1,10 @@
 @extends('frontend.main_master')
 @section('main')
+
+@section('title')
+   Contact | Easy Code
+@endsection
+
     <main>
 
         <!-- breadcrumb-area -->

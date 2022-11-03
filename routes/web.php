@@ -123,7 +123,7 @@ Route::controller(FooterController::class)->group(function () {
 // Contact me All Route
 Route::controller(ContactController::class)->group(function () {
     //froent route
-    Route::get('/Contact', 'Contact')->name('contact.me');
+    Route::get('/contact', 'Contact')->name('contact.me');
     Route::post('/store/message', 'StoreMessage')->name('store.message');
 
     //bckend route
