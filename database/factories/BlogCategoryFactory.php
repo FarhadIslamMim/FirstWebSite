@@ -15,7 +15,7 @@ class BlogCategoryFactory extends Factory
     public function definition()
     {
         return [
-            'blog_category'=>$this->faker->phoneNumber()
+            'blog_category'=>$this->faker->name()
         ];
     }
 }
