@@ -147,6 +147,10 @@
 
      <!-- Sweet Alart js -->
      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+        <!-- validation js -->
+     <script src="{{ asset('backend/assets/js/validate.min.js') }}"></script>
+
      <script src="{{ asset('backend/assets/js/code.js') }}"></script>
 
       <!-- Tag Input Js-->
