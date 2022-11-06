@@ -34,10 +34,10 @@
                     <div class="text-center mt-4">
                         <div class="mb-3">
                             <a href="index.html" class="auth-logo">
-                                <img src="{{ asset('backend/assets/images/logo-dark.png')}}" height="30" class="logo-dark mx-auto"
-                                    alt="">
-                                <img src="{{ asset('backend/assets/images/logo-light.png')}}" height="30" class="logo-light mx-auto"
-                                    alt="">
+                                <img src="{{ asset('backend/assets/images/logo-dark.png') }}" height="30"
+                                    class="logo-dark mx-auto" alt="">
+                                <img src="{{ asset('backend/assets/images/logo-light.png') }}" height="30"
+                                    class="logo-light mx-auto" alt="">
                             </a>
                         </div>
                     </div>
@@ -71,6 +71,19 @@
                                         <label class="form-label ms-1" for="customCheck1">Remember me</label>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <div class="col -12">
+                                    {!! NoCaptcha::renderJs() !!}
+                                    {!! NoCaptcha::display() !!}
+
+                                    @if ($errors->has('g-recaptcha-response'))
+                                        <span class="help-block">
+                                            <strong style="color: red">{{ $errors->first('g-recaptcha-response') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+
                             </div>
 
                             <div class="form-group mb-3 text-center row mt-3 pt-1">
